@@ -1,0 +1,135 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Karla', sans-serif;
+  background-color: hsl(204, 43%, 93%);
+  font-size: 16px;
+
+}
+h1 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 10px;
+}
+strong {
+  font-size: 30px;
+  font-family: Arial;
+}
+
+span {
+  opacity: 0.7;
+}
+
+footer {
+  display: grid;
+}
+li {
+  list-style: none;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+.wrapper {
+height: 95vh;
+width: 100%;
+display: grid;
+grid-template-rows: 95vh 5vh;
+}
+.main-box {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+align-self: center;
+justify-self: center;
+box-shadow: 0 0.4em 4em rgba(0, 0, 0, 0.3);
+border-radius: 12px;
+}
+
+.top-box {
+  grid-column: span 2;
+  background-color: white;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  line-height: 2;
+}
+.top-box, .left-box, .right-box {
+  padding: 30px;
+
+}
+.p-top {
+  color: hsl(218, 22%, 67%);
+}
+.h3-top {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 25px;
+}
+
+.left-box {
+  background-color: hsl(179, 62%, 43%);
+  border-bottom-left-radius: 12px;
+  color: #fff;
+}
+
+.h3-left {
+  margin-bottom: 25px;
+}
+.left-text {
+  margin-bottom: 17px;
+}
+
+.right-box {
+  background: hsl(179, 64%, 45%);
+  border-bottom-right-radius: 12px;
+  color: #fff;
+}
+.h3-right {
+margin-bottom: 16px;
+}
+
+button {
+
+  background-color: hsl(71, 73%, 54%);
+  text-align: center;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: 0 0.4em 4em rgba(0, 0, 0, 0.3);
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  padding: 22px;
+}
+
+  .attribution {
+    font-size: 11px;
+    align-self: center;
+    justify-self: center;
+  }
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  @media (max-width:1000px) {
+.wrapper {
+  padding: 30px 25px 0 25px;
+  grid-template-rows: unset;
+  height: auto;
+}
+ .main-box {
+   grid-template-columns: 1fr;
+   width: 100%;
+   margin-bottom: 16px;
+ }
+ .top-box {
+   grid-column: unset;
+ }
+ .left-box {
+   border-bottom-left-radius: unset;
+ }
+ .right-box {
+   border-bottom-left-radius: 12px;
+ }
+  }
